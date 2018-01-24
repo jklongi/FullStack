@@ -6,7 +6,6 @@ import Anecdote from './Components/Anecdote'
 class App extends React.Component {
   constructor(props) {
     super(props)
-    console.log(this.props)
     this.state = {
       selected: 0,
       anecdotes: this.props.anecdotes.map(anectode => ({ content: anectode, votes: 0 }))
